@@ -1,0 +1,17 @@
+#to print count of n prime number 
+def isprime(n):
+ for i in range (2,n):
+    if n%i==0:
+        return False
+ return True
+
+n=int(input('enter n:'))
+count=0
+for i in range(2,n+1):
+ if isprime(i):
+     count=count+1
+print('the number of prime numbers upto',n,'are:',count)
+
+output:
+enter n:100
+the number of prime numbers upto 100 are: 25
